@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33083693087019994}
   - component: {fileID: 135278648501710374}
   - component: {fileID: 23312127440875036}
+  - component: {fileID: 114227056731357806}
   m_Layer: 0
   m_Name: SnakeBody
   m_TagString: Untagged
@@ -36,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485063591755388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.67, y: 12.038599, z: -7.35}
-  m_LocalScale: {x: 0.7, y: 1, z: 0.7}
+  m_LocalPosition: {x: -2.67, y: 0.27, z: -7.35}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,6 +82,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485063591755388}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114227056731357806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485063591755388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf2be42c42c082428f3fe9866b5791f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 0
+  tailTarget: {x: 0, y: 0, z: 0}
+  indx: 0
+  tailTargetObj: {fileID: 0}
+  mainSnake: {fileID: 0}
 --- !u!135 &135278648501710374
 SphereCollider:
   m_ObjectHideFlags: 1
